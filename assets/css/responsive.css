@@ -1,46 +1,89 @@
 @media (min-width: 500px) {
-  header {
-    display: flex;
-  }
+  
   .logo {
-    padding-right: 2%;
+    /* padding-right: 2%; */
+    padding-left: 0%;
   }
   .logo-nav {
-    /* display: none; */
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin-left: 10%;
+    
+    margin-left: 5%;
   }
   .navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 5% 0% 5% 0%;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding: 5% 0% 5% 0%; */
+    margin-bottom:5%;
+    grid-area: 2/2/2/1;
+  }
+  .navigation > a {
+    font-size: 0.9em;
   }
   .donation {
-    width: 40%;
-    padding: 2% 0% 0% 0%;
-    margin-left: 5%;
+  
+    padding: 0% 0% 0% 10%;
+    grid-area: 1/2/1/2;
+    
   }
   .donation-btn {
     padding: 5% 10% 5% 10%;
-  }
+    
+   }
   .main-page {
-    /* height: 43em; */
+   
     background-size: 190% auto;
     background-position-x: 25%;
     background-position-y: 85%;
-    display: grid;
-    grid-template-rows: 2fr 3fr;
+  
   }
-  .main-page-content2 > div {
-    font-size: 1em;
+  .main-page-content2 {
+    padding: 5% 2% 0% 5%;
+    /* margin: 10% 10% 10% 10%; */
+  }
+  .main-page-content2-head {
+    font-size: 2.2em;
+    text-align: left;
     font-weight: bold;
+    font-family: "Helvetica";
+    margin-bottom: 2%;
+  }
+  .main-page-content2-low {
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: left;
+    /* padding: 5%; */
+    margin-bottom: 5%;
   }
   .main-page-content2-top {
-    height: auto;
+    /* height: ; */
+    /* height: 0.05em; */
     position: absolute;
     top: -10%;
     left: 10%;
+    padding: 2%;
   }
+  .main-page-lower{
+    padding: 10% 5% 10% 10%;
+  }
+  .main-page-lower-head {
+    
+  padding: 0%  0% 2% 0%;
+  }
+  .main-page-lower-content {
+    padding: 0% 25% 0% 0%;
+  }
+  .main-page-lower-top {
+    background-color: #354463;
+    width: 7em;
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    top: -5%;
+    left: 40%;
+    color: white;
+    font-size:0.8em;
+  
+  }
+  /* .what-we-do-heading{
+    
+  } */
 }
