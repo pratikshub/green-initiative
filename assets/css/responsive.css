@@ -1,0 +1,46 @@
+@media (min-width: 500px) {
+  header {
+    display: flex;
+  }
+  .logo {
+    padding-right: 2%;
+  }
+  .logo-nav {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 10%;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0% 5% 0%;
+  }
+  .donation {
+    width: 40%;
+    padding: 2% 0% 0% 0%;
+    margin-left: 5%;
+  }
+  .donation-btn {
+    padding: 5% 10% 5% 10%;
+  }
+  .main-page {
+    /* height: 43em; */
+    background-size: 190% auto;
+    background-position-x: 25%;
+    background-position-y: 85%;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+  }
+  .main-page-content2 > div {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .main-page-content2-top {
+    height: auto;
+    position: absolute;
+    top: -10%;
+    left: 10%;
+  }
+}
