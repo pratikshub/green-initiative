@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Rambla&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-/* @import url("./assets/flood-std/FloodStd.otf"); */
+
 @font-face {
   font-family: "FloodFont";
   src: url(../flood-std/floodstd.otf);
   font-weight: bold;
 }
 .container {
-  /* background-color: #354463; */
   width: 100%;
-
   color: #354463;
 }
 
@@ -20,17 +18,14 @@
   grid-template-columns: 1fr 1fr;
 }
 .logo {
-  /* padding-right: 20%; */
   font-weight: bold;
-  padding-left: 10%
+  padding-left: 10%;
 }
 .navigation {
   font-family: "Rambla", sans-serif;
   display: flex;
   flex-direction: column;
   font-weight: 200;
-  /* padding: 0% 2% 0% 10%; */
-  /* margin-left: 25%; */
 }
 .navigation > a {
   text-decoration: none;
@@ -38,11 +33,8 @@
   font-size: 1em;
 }
 .donation {
-  /* padding: 5% 0% 0% 25%; */
-  margin:3% 0% 3% 5%;
-  grid-area: 2/1/span 1/span 2;
-  /* width: 50%; */
-  
+  margin: 3% 0% 3% 5%;
+  grid-area: 2/1 / span 1 / span 2;
 }
 .donation-btn {
   background-color: #c1f7d5;
@@ -52,8 +44,6 @@
   font-size: 1em;
   cursor: pointer;
   padding: 5% 30% 5% 30%;
-  /* position: relative;
-  left: 5%; */
   border-radius: 3em;
 }
 
@@ -99,13 +89,8 @@
   text-decoration: underline;
   color: #354463;
 }
-/* .main-page-content2>div>a{
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  } */
+
 .main-page-content2-top {
-  /* height: 1em; */
   background-color: #354463;
   width: 7em;
   text-align: center;
@@ -121,7 +106,6 @@
   font-family: "Helvetica";
 }
 .main-page-lower {
-  /* height: 13em; */
   background-color: #c1f7d5;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -136,11 +120,10 @@
 }
 .main-page-lower-content {
   font-weight: 300;
-  padding:1% 1% 1% 1%;
+  padding: 1% 1% 1% 1%;
   font-size: 1em;
 }
 .main-page-lower-top {
-  /* height: 1em; */
   background-color: #354463;
   width: 7em;
   text-align: center;
@@ -161,7 +144,7 @@
 }
 .what-we-do > * {
   width: 80%;
-  margin: 0% auto 0% auto;
+  margin: 0% 4% 0% 4%;
 }
 .what-we-do-heading {
   color: white;
@@ -169,7 +152,8 @@
   text-align: center;
   position: relative;
   padding: 5% 0% 5% 0%;
-  font-size: 1.5em;
+  font-size: 1.68em;
+  font-weight: bold;
 }
 .what-we-do-heading > div {
   background-color: white;
@@ -177,8 +161,8 @@
   position: absolute;
   top: -5%;
   left: 25%;
-  padding: 3%;
-
+  padding: 3% 8% 3% 8%;
+  font-size: 0.6em;
 }
 .what-we-do-div {
   width: 80%;
@@ -188,49 +172,48 @@
   grid-gap: 8%;
 }
 .what-we-do-div-content {
-  /* height: 25.5em; */
   background-color: #ffffff;
-  display: grid;
-  grid-template-rows: 4fr 1.5fr 3fr 1fr;
-  /* width: 100%; */
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   width: 80%;
   margin: 0% auto 0% auto;
 }
 
 .what-we-do-div-content-img {
-  width: 90%;
+  width: 80%;
   position: relative;
-  top:-20%;
+  top: -20%;
   left: 15%;
+  order: 1;
 }
-.what-we-do-div-content-img>img{
+.what-we-do-div-content-img > img {
   width: 80%;
 }
 
 .what-we-do-div-content-lower {
-  /* display: grid;
-  grid-template-rows: 1fr 2fr 1fr; */
   width: 80%;
   margin: 0% auto 5% auto;
 }
 .what-we-do-div-content-lower-head {
   width: 80%;
   margin: 0% auto 5% auto;
-  /* font-family: "Courier New", Courier, monospace; */
   font-weight: 600;
   text-align: center;
   font-size: 1.2em;
   padding: auto;
+  order: 2;
 }
 .what-we-do-div-content-lower-content {
   width: 80%;
   margin: 0% auto 5% auto;
-  /* font-family: "Courier New", Courier, monospace; */
   font-weight: 300;
   text-align: center;
   font-size: 1em;
   padding: auto;
+  order: 3;
+}
+.what-we-do-div-content-lower-btn {
+  order: 4;
 }
 .what-we-do-div-content-lower-btn-con {
   background-color: #c1f7d5;
@@ -254,12 +237,27 @@
   display: grid;
   grid-template-rows: 2fr 3fr;
 }
+.climate-change-head-cots {
+  font-family: "FloodFont";
+  color: #ffffff;
+  font-size: 2.5em;
+  margin: 10% 0% 0% 10%;
+}
+.climate-change-head-btn {
+  background-color: #c1f7d5;
+  border: none;
+  color: #354463;
+  text-align: center;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-left: 10%;
+  border-radius: 3em;
+  padding: 2% 2% 2% 2%;
+}
 .climate-change-lower {
-  /* display: grid;
-  grid-template-rows: 1fr; */
-
   width: 80%;
   margin: 0% 10% 0% 10%;
+  position: relative;
 }
 .climate-change-lower-dyk {
   width: 10em;
@@ -268,6 +266,9 @@
   background-color: #354463;
   color: #ffffff;
   padding: 2%;
+  position: absolute;
+  top: -3%;
+  left: 25%;
 }
 .climate-change-lower-content {
   height: 8em;
@@ -275,9 +276,17 @@
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin-bottom: 10%;
-  /* align-items: center; */
-  /* justify-items: center; */
+  margin: 0% 0% 10% 0%;
+}
+.climate-change-lower-content-heading {
+  margin-left: 10%;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+.climate-change-lower-content-info {
+  margin-left: 10%;
 }
 .climate-change-lower-content-logo {
   padding: 10% 5% 10% 5%;
@@ -292,24 +301,21 @@
 .stories {
   width: 80%;
   margin: 10%;
-  height: 52em;
-  /* background-color: rgb(228, 228, 228); */
   display: grid;
   grid-template-rows: 4fr 4fr 1fr;
-  grid-gap: 2em;
+  grid-gap: 4%;
   position: relative;
 }
 .stories-head {
   background-color: #354463;
-  height: 2em;
-  width: 10em;
   color: #ffffff;
   text-align: center;
-  padding: 2.5% 0% 0% 0%;
+  padding: 2% 10% 2% 10%;
   position: absolute;
   top: -2.5%;
   left: 25%;
   margin-top: 5%;
+  font-size: 1.2em;
 }
 .stories-img {
   width: 100%;
@@ -318,9 +324,11 @@
   background-color: #354463;
   text-align: center;
   color: white;
+  font-size: 1.1em;
+  padding: 5%;
+  font-weight: bold;
 }
 .stories-btn {
-  /* background-color: chocolate */
   background-color: #c1f7d5;
   border: none;
   color: #354463;
@@ -341,18 +349,24 @@
   font-size: 2.5em;
   padding: 10% 2% 5% 2%;
   color: #ffffff;
+  font-family: "FloodFont";
+  margin-left: 20%;
 }
 
 .event {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 25%; */
   position: relative;
   width: 80%;
   margin: 0% 10% 10% 10%;
 }
-
+.event-title {
+  text-align: center;
+}
+.event-content {
+  text-align: center;
+}
 .event > img {
   width: 100%;
 }
@@ -421,7 +435,6 @@
 }
 
 .foot > aside {
-  /* background-color: red; */
   grid-area: 3/2;
   text-align: right;
   font-size: 7vw;

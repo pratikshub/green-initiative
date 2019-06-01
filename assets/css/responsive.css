@@ -1,43 +1,33 @@
 @media (min-width: 500px) {
-  
   .logo {
-    /* padding-right: 2%; */
     padding-left: 0%;
   }
   .logo-nav {
-    
     margin-left: 5%;
   }
   .navigation {
     flex-direction: row;
     justify-content: space-around;
-    /* padding: 5% 0% 5% 0%; */
-    margin-bottom:5%;
+    margin-bottom: 5%;
     grid-area: 2/2/2/1;
   }
   .navigation > a {
     font-size: 0.9em;
   }
   .donation {
-  
     padding: 0% 0% 0% 10%;
     grid-area: 1/2/1/2;
-    
   }
   .donation-btn {
     padding: 5% 10% 5% 10%;
-    
-   }
+  }
   .main-page {
-   
     background-size: 190% auto;
     background-position-x: 25%;
     background-position-y: 85%;
-  
   }
   .main-page-content2 {
     padding: 5% 2% 0% 5%;
-    /* margin: 10% 10% 10% 10%; */
   }
   .main-page-content2-head {
     font-size: 2.2em;
@@ -50,23 +40,19 @@
     font-size: 1.2em;
     font-weight: 200;
     text-align: left;
-    /* padding: 5%; */
     margin-bottom: 5%;
   }
   .main-page-content2-top {
-    /* height: ; */
-    /* height: 0.05em; */
     position: absolute;
     top: -10%;
     left: 10%;
     padding: 2%;
   }
-  .main-page-lower{
+  .main-page-lower {
     padding: 10% 5% 10% 10%;
   }
   .main-page-lower-head {
-    
-  padding: 0%  0% 2% 0%;
+    padding: 0% 0% 2% 0%;
   }
   .main-page-lower-content {
     padding: 0% 25% 0% 0%;
@@ -80,10 +66,87 @@
     top: -5%;
     left: 40%;
     color: white;
-    font-size:0.8em;
-  
+    font-size: 0.8em;
   }
-  /* .what-we-do-heading{
+  .what-we-do > * {
+    margin: 0% 5% 0% 5%;
+  }
+  .what-we-do-heading {
+    text-align: left;
+    padding: 5% 3% 5% 3%;
+  }
+  .what-we-do-heading > div {
+    top: -5%;
+    left: 5%;
+    padding: 2% 5% 2% 5%;
+  }
+  .what-we-do-div-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .what-we-do-div-content-img {
+    width: 40%;
+    order: 1;
+    align-self: center;
+  }
+  .what-we-do-div-content-lower-head {
+    align-self: center;
+    width: 40%;
+    order: 2;
+  }
+  .what-we-do-div-content-lower-content {
+    width: 40%;
+    order: 4;
+  }
+  .what-we-do-div-content-lower-btn {
+    width: 40%;
+    order: 3;
+  }
+  .climate-change {
+    background-size: 550% auto;
+    background-position-x: 45%;
+    background-position-y: 75%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+  }
+  .climate-change-head {
+    position: relative;
+    top: 10%;
+    left: 5%;
+  }
+  .climate-change-lower {
+    top: 10%;
+  }
+  .climate-change-head-btn {
+    position: absolute;
+    top: 25%;
+  }
+  .stories {
+    grid-template-rows: 0.3fr 0.1fr 0.1fr ;
+    /* grid-template-columns:1fr 1fr 1fr; */
+    position: relative;
+  }
+  .stories-head {
+    top: -8%;
+    left: 15%;
+    z-index: 1;
+  }
+  .stories-img {
+    width: 90%;
+    position: relative;
+  }
+  .stories-content {
+    width: 90%;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
     
-  } */
+  }
+  .stories-btn {
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    padding: 2% 5% 2% 5%;
+  }
 }
