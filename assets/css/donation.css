@@ -1,0 +1,37 @@
+.foot {
+    padding: 5%;
+    display: grid;
+    grid-row-gap: 0%;
+    grid-column-gap: 15%;
+  }
+  .title>h1{
+    font-size: 1.9em;
+  }
+   .cots{
+    grid-area: 3/2;
+    text-align: right;
+    font-size: 2.2em;
+    font-family: "FloodFont";
+    padding: 5%;
+  }
+    .social-link {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 5px;
+    }
+    .help {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 10%;
+    }
+    .title{
+      margin-right: 3%;
+    }
