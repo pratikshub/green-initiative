@@ -15,75 +15,68 @@
     <div class="main-page-head">
       <h1> Give HOPE to those Who need It most</h1>
     </div>
-    <div class="donation-form">
-      <p>Your information</p>
-      <form action="">
-        <div>
-          <input type="text" name="First Name" required>
-          <label>First Name</label>
+    <form action="">
+        <div class="donation-form">
+            <div class="person-info">
+              <div class="info-header">Your information</div>
+              <div class="name">
+                <div class="first">
+                  <input type="text" class="input" size="9"/>
+                  <label>FIRST NAME</label>
+                </div>
+                <div class="last">
+                  <input type="text" id="last" class="input" size="9"/>
+                  <label for="last">LAST NAME</label>
+                </div>
+              </div>
+              <div class="st-addr">
+                <p>STREET ADDRESS</p>
+                <input type="text" class="input" placeholder="Street address" />
+              </div>
+              <div class="addr">
+                <div class="city">
+                  <p>CITY</p>
+                  <input type="text" class="input" placeholder="City" />
+                </div>
+                <div class="state">
+                  <p>STATE</p>
+                  <input type="text" class="input" label="STATE" />
+                </div>
+                <div class="zip"></div>
+              </div>
+              <div class="email">
+                <p>EMAIL ADDRESS</p>
+                <input type="text" class="input" placeholder="Email address" />
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="info-header">Payment information</div>
+              <div class="nmbr">
+                <p>CREDIT CARD NUMBER</p>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Credit card number"
+                />
+              </div>
+              <div class="exp">
+                <p>EXPIRATION DATE</p>
+                <input type="text" class="input" placeholder="MM" />
+                <input type="text" class="input" placeholder="YYYY" />
+              </div>
+              <div class="code">
+                <p>SECURITY CODE</p>
+                <input type="text" class="input" placeholder="CVC" />
+              </div>
+            </div>
+            <div class="confirm">
+              Click the button to confirm your donation of $10, recurring monthly.
+            
+            <div class="button">Process Payment</div>
+            <div class="home"><a href="index.html">Go back</a></div>
+          </div>
         </div>
-        <div>
-          <input type="text" name="Last Name" required>
-          <label>Last Name</label>
-        </div>
-        <div class="address">
-          <input type="text" name="Street Address" required>
-          <label>Street Adress</label>
-        </div>
-        <div>
-          <input type="text" name="City" required>
-          <label>City</label>
-        </div>
-        <div class="state-zip">
-          <div>
-            <label class="state-label">State</label><br>
-            <select name="State">
-              <option value="AL">AL</option>
-              <option value="KA">Karnataka</option>
-              <option value="GJ">Gujrat</option>
-              <option value="BR">Bihar</option>
-              <option value="PUN">Punjab</option>
-            </select>
-
-          </div>
-          <div>
-            <input type="number" name="Zip" required>
-            <label>Zip</label>
-          </div>
-        </div>
-        <div class="email">
-          <input type="email" name="Email" required>
-          <label>Email address</label>
-          <h1>Payment Information</h1>
-
-          <div class="credit-card">
-
-            <input type="text" name="card number" required>
-            <label>Credit card number</label>
-          </div>
-          <div>
-
-            <input type="date">
-            <label>Expiration Date</label>
-          </div>
-          <div>
-
-            <input type="text" name="CVC" required>
-            <label>Security Code</label>
-          </div>
-          <div class="guide">
-            <h2>Click the button to confirm your donation of $10, recurring monthly.</h2>
-          </div>
-          <div type="submit" class="button">
-            <p>Process Payment</p>
-          </div>
-          <a href="http://127.0.0.1:5500/non-profit.html">Go back</a>
-
-      </form>
-     </div>
-
-
-
+     </form>
   </div>
   <footer class="foot">
     <div class="title">
