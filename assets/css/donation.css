@@ -14,7 +14,6 @@ header {
 }
 .main-page {
   background-image: url(../donation/annie-spratt-427340-unsplash@2x.png);
-  /* height: 44em; */
   background-position-x: 60%;
 }
 .main-page-head > h1 {
@@ -31,7 +30,6 @@ header {
   display: grid;
   grid-template-rows: 3fr 2fr 2fr;
   color: white;
-  /* grid-auto-rows: minmax(0, 1fr) ; */
 }
 .donation-form > div {
   width: 80%;
@@ -45,40 +43,18 @@ header {
 .person-info {
   padding-top: 1rem;
 }
-label {
-  position: relative;
-  top: -1.5rem;
-  font-size: 0.8rem;
-  left: 0.2rem;
-  color: #888888;
-  transition-property: left, top, color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
 
 input {
   width: 100%;
-  z-index: 1;
   padding: 0.2rem;
   border: none;
   border-bottom: solid 1.5px #c1f7d5;
-
   background-color: #354463;
 }
 .half {
   width: 90%;
 }
-input:focus ~ label {
-  left: 0rem;
-  top: -2.5rem;
-  font-size: 0.7rem;
-  color: white;
-  text-transform: uppercase;
-}
 
-input:focus {
-  outline: none;
-}
 .name {
   display: flex;
   justify-content: space-between;
@@ -227,7 +203,7 @@ input:focus {
     top: -3rem;
   }
   input:focus ~ label
-  /*,input:valid ~ label*/ {
+ {
     top: -5rem;
     font-size: 1.1rem;
   }
@@ -286,19 +262,15 @@ input:focus {
     margin: 4rem 4rem 4rem 4rem;
     grid-area: 1/1/1/1;
   }
-  /* .main-page-head > h1 {
-    align-items: flex-start;
-    margin: 0;
-    width: 30vw;
-  } */
+  
   label {
-    font-size: 70%;
+    font-size:0.6em;;
   }
   .button {
     padding: 0.8rem 0.7rem;
   }
   .text {
-    font-size: 105%;
+    font-size: 1.1em;
   }
   .confirm-payment {
     margin-top: 100%;
