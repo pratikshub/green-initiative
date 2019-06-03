@@ -23,13 +23,7 @@ header {
   font-size: 2em;
   padding: 0% 10% 0% 10%;
 }
-p {
-  display: block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
+
 .donation-form {
   width: 84%;
   background-color: #354463;
@@ -44,18 +38,18 @@ p {
   margin: auto;
 }
 .info-header {
-  line-height: 3em;
+  line-height: 3rem;
   font-weight: 700;
   font-size: 1.1em;
 }
 .person-info {
-  padding-top: 1em;
+  padding-top: 1rem;
 }
 label {
   position: relative;
-  top: -1.5em;
-  font-size: 0.8em;
-  left: 0.2em;
+  top: -1.5rem;
+  font-size: 0.8rem;
+  left: 0.2rem;
   color: #888888;
   transition-property: left, top, color;
   transition-duration: 0.3s;
@@ -65,7 +59,7 @@ label {
 input {
   width: 100%;
   z-index: 1;
-  padding: 0.2em;
+  padding: 0.2rem;
   border: none;
   border-bottom: solid 1.5px #c1f7d5;
 
@@ -74,17 +68,14 @@ input {
 .half {
   width: 90%;
 }
-input:focus ~ label
-/* input:valid ~ label*/ {
-  left: 0em;
-  top: -2.5em;
-  font-size: 0.7em;
+input:focus ~ label {
+  left: 0rem;
+  top: -2.5rem;
+  font-size: 0.7rem;
   color: white;
-  /* font-weight: 600; */
   text-transform: uppercase;
 }
 
-/* no input box highlight when focussed */
 input:focus {
   outline: none;
 }
@@ -116,7 +107,7 @@ input:focus {
 .exp {
   display: flex;
   width: 46.5%;
-  height: 3em;
+  height: 3rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -126,11 +117,11 @@ input:focus {
   flex-wrap: wrap;
 }
 .code p {
-  font-size: 0.7em;
-  padding-bottom: 0.52em;
+  font-size: 0.7rem;
+  padding-bottom: 0.52rem;
 }
 .exp p {
-  font-size: 0.7em;
+  font-size: 0.7rem;
 }
 .exp_txt {
   width: 40%;
@@ -140,14 +131,14 @@ input:focus {
   color: #354463;
   width: 100%;
   background-color: #c1f7d5;
-  padding: 0.5em 0.7em;
-  font-size: 0.9em;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
   border: 0 solid transparent;
-  border-radius: 2em;
+  border-radius: 2rem;
   font-weight: 800;
   text-align: center;
-  line-height: 1.8em;
-  margin: 1.5em 0;
+  line-height: 1.8rem;
+  margin: 1.5rem 0;
 }
 .confirm-payment {
   display: flex;
@@ -202,25 +193,20 @@ input:focus {
   margin-right: 3%;
 }
 
-/* TABLET VIEW */
-@media screen and (min-width: 450px) {
-  /* FOOTER */
-  * {
-    font-size: 1.1em;
-  }
+@media screen and (min-width: 500px) {
   header {
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
 
   .main-page-head > h1 {
-    font-size: 3em;
-    /* line-height: 3em; */
+    font-size: 2em;
+    line-height: 2em;
+    padding: 0% 25% 0% 15%;
   }
   .donation-form {
     grid-template-rows: 3fr 2fr 2fr;
   }
   .info-header {
-    font-size: 1em;
     padding-bottom: 1em;
   }
   .exp_txt {
@@ -228,22 +214,22 @@ input:focus {
   }
   .exp p,
   .code p {
-    font-size: 0.9em;
+    font-size: 0.6em;
     padding-right: 10%;
   }
   .exp,
   .code {
-    font-size: 0.7em;
+    font-size: 1em;
     height: auto;
   }
   label {
-    font-size: 1.3em;
-    top: -3em;
+    font-size: 1.3rem;
+    top: -3rem;
   }
   input:focus ~ label
   /*,input:valid ~ label*/ {
-    top: -5em;
-    font-size: 1.1em;
+    top: -5rem;
+    font-size: 1.1rem;
   }
   .code p {
     padding-bottom: 0;
@@ -255,31 +241,34 @@ input:focus {
     margin: 0;
   }
   .button {
-    width: 15em;
+    width: 15rem;
     order: 1;
-    margin-top: 3.5em;
-    font-size: 0.9em;
-    padding: 1em 0.7em;
+    margin-top: 3.5rem;
+    font-size: 1em;
+    padding: 1rem 0.7rem;
   }
   .home {
-    margin-top: 4.5em;
-    font-size: 0.7em;
+    margin-top: 4.5rem;
+    font-size: 1.2em;
   }
   .text {
-    font-size: 1.15em;
+    font-size: 1em;
   }
 }
 
-/* DESKTOP VIEW */
 @media screen and (min-width: 900px) {
-  .main-page-head > h1 {
-    font-size: 3em;
-    text-align: left;
-  }
   .main-page {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-size: cover;
   }
+  .main-page-head > h1 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: left;
+    grid-area: 1/2/1/2;
+  }
+  
   .person-info {
     margin: auto;
   }
@@ -287,25 +276,29 @@ input:focus {
     margin: auto;
   }
   .info-header {
-    font-size: 1.5em;
-    /* padding: 2em 0; */
+    font-size: 1.5rem;
+    padding: 2rem 0;
   }
   .pay-head {
     padding-top: 0;
   }
   .donation-form {
-    /* width: 42vw; */
-    margin: 4em 4em 4em 4em;
+    margin: 4rem 4rem 4rem 4rem;
+    grid-area: 1/1/1/1;
   }
-
+  /* .main-page-head > h1 {
+    align-items: flex-start;
+    margin: 0;
+    width: 30vw;
+  } */
   label {
-    font-size: 0.5em;
+    font-size: 70%;
   }
   .button {
-    padding: 0.8em 0.7em;
+    padding: 0.8rem 0.7rem;
   }
   .text {
-    font-size: 1em;
+    font-size: 105%;
   }
   .confirm-payment {
     margin-top: 100%;
@@ -314,6 +307,7 @@ input:focus {
     display: flex;
     justify-content: space-around;
   }
+
   .social-link {
     display: block;
     list-style-type: disc;
