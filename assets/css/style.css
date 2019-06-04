@@ -162,7 +162,6 @@
 }
 
 .what-we-do-heading {
-  
   display: grid;
   grid-template-rows: 1fr 4fr;
   justify-items: center;
@@ -172,21 +171,16 @@
 
 .what-we-do-heading > div {
   font-size: 0.8em;
-  width: 50%;
-  height: 2.5em;
   background-color: white;
   color: #354463;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5%;
+  padding: 2%;
 }
 .what-we-do-heading-content {
   font-weight: 700;
   color: white;
   text-align: center;
   font-size: 1.5em;
-  margin-block-start: 0em;
+  margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
@@ -197,11 +191,9 @@
 }
 
 .what-we-do-div-content {
-  
   display: grid;
   width: 80%;
   grid-template-rows: 4fr 1fr 2.8fr 2.2fr;
-  
   align-items: center;
   padding: 5%;
   position: relative;
@@ -211,11 +203,9 @@
 }
 .what-we-do-img {
   width: 80%;
-
   position: absolute;
   top: -15%;
   left: 10%;
-  /* z-index: -1; */
 }
 .what-we-do-div-content h3 {
   grid-area: 2/1/3/2;
@@ -235,10 +225,9 @@
   text-align: center;
   font-size: 1em;
   cursor: pointer;
-  padding: 5% 10% 5% 10%;
+  padding: 5%;
   border-radius: 3em;
 }
-
 
 .climate-change {
   height: 63em;
@@ -374,7 +363,6 @@
   padding: 5% 20% 5% 20%;
 }
 
-
 .things-to-do {
   display: grid;
   grid-template-rows: minmax(0, 2fr) minmax(0, 5fr) minmax(0, 5fr);
@@ -393,9 +381,10 @@
   font-size: 2.5rem;
   color: white;
   text-align: center;
-margin-top: 5%;
+  margin-top: 5%;
 }
-.event, .news{
+.event,
+.news {
   display: grid;
   height: 100%;
   justify-content: space-around;
@@ -410,14 +399,12 @@ margin-top: 5%;
   color: #354463;
   font-size: 1.2em;
   padding: 2% 5% 2% 5%;
-    
 }
-.event>img,.news>img{
- 
+.event > img,
+.news > img {
   width: 100%;
 }
 .event-btn {
-  
   background-color: #c1f7d5;
   border: none;
   color: #354463;
@@ -428,7 +415,7 @@ margin-top: 5%;
   padding: 5% 10% 5% 10%;
   margin: 5%;
 }
-.event-title{
+.event-title {
   width: 95%;
   color: white;
   font-size: 1.3em;
@@ -438,7 +425,6 @@ margin-top: 5%;
   color: white;
   font-size: 1em;
   width: 90%;
-  
 }
 
 .subscribe {

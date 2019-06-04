@@ -19,7 +19,7 @@ header {
   background-position-x: 60%;
 }
 
-.main-page-head>h1 {
+.main-page-head > h1 {
   font-family: "FloodFont";
   color: white;
   font-size: 2em;
@@ -35,7 +35,7 @@ header {
   color: white;
 }
 
-.donation-form>div {
+.donation-form > div {
   width: 80%;
   margin: auto;
 }
@@ -43,29 +43,51 @@ header {
 .info-header {
   font-weight: 700;
   font-size: 1.1em;
+  margin-bottom: 10%;
 }
-
-.person-info {
-  padding-top: 2rem;
+.form{
+  position: relative;
 }
-
 input {
   width: 100%;
-  padding: 0.3rem;
+  padding: 0.3em;
   border: none;
   border-bottom: solid 1.5px #c1f7d5;
   background-color: #354463;
+  margin-bottom: 1em;
+  color: white;
 }
-label{
+label {
+  position: absolute;
+  top: 0.3em;
   font-size: 0.8em;
+  left: 0.2em;
+  color: #888888;
+  transition-property: left, top, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  pointer-events: none;
 }
+input:focus{
+  outline: none;
+}
+input:focus ~ label,
+input:valid ~ label
+{
+  left: 0em;
+  top: -1em;
+  font-size: 0.7rem;
+  color: white;
+  text-transform: uppercase;
+}
+
 
 .name {
   display: flex;
   justify-content: space-between;
 }
 
-.name>div {
+.name > div {
   width: 46.5%;
 }
 
@@ -90,14 +112,17 @@ label{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
+  font-size: 0.8em;
 }
-
+.nmbr{
+  width: 100%;
+}
 .exp {
   display: flex;
   width: 46.5%;
-  height: 3rem;
-  flex-wrap: wrap;
+  height: 3em;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
 
@@ -107,45 +132,25 @@ label{
   flex-wrap: wrap;
 }
 
-.code p {
-  font-size: 0.7rem;
-  padding-bottom: 0.52rem;
-}
-
-.exp p {
-  font-size: 0.7rem;
-}
-
-.exp_txt {
-  width: 40%;
-}
-
 .button {
   cursor: pointer;
   color: #354463;
   width: 100%;
   background-color: #c1f7d5;
-  padding: 0.5rem 0.7rem;
-  font-size: 0.9rem;
+  padding: 0.5em 0.7em;
+  font-size: 0.9em;
   border: 0 solid transparent;
-  border-radius: 2rem;
+  border-radius: 2em;
   font-weight: 800;
   text-align: center;
-  line-height: 1.8rem;
-  margin: 1.5rem 0;
+  line-height: 1.8em;
+  margin: 1.5em 0;
 }
 
-.confirm-payment {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
+.home {
+  margin-bottom: 5%;
 }
-
-.confirm-payment .text {
-  font-weight: 700;
-}
-a{
+.confirm a {
   text-decoration: none;
   color: aliceblue;
 }
@@ -157,7 +162,7 @@ a{
   color: #354463;
 }
 
-.title>h1 {
+.title > h1 {
   font-size: 1.9em;
 }
 
@@ -198,46 +203,26 @@ a{
     font-size: 1.7em;
   }
 
-  .main-page-head>h1 {
+  .main-page-head > h1 {
     font-size: 2em;
     line-height: 2em;
     padding: 0% 25% 0% 15%;
   }
 
   .donation-form {
-    grid-template-rows: 3fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   .info-header {
-    padding-bottom: 1em;
-  }
-
-  .exp_txt {
-    width: 35%;
-  }
-
-  .exp p,
-  .code p {
-    font-size: 0.6em;
-    padding-right: 10%;
-  }
-
-  .exp,
-  .code {
-    font-size: 1em;
-    height: auto;
-  }
-
-  label {
-    font-size: 0.8rem;
+    padding-bottom: 2em;
+    margin-bottom: 0%;
     
   }
-
-  .code p {
-    padding-bottom: 0;
+  label {
+    font-size: 0.8em;
   }
 
-  .confirm-payment {
+  .confirm {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -245,20 +230,16 @@ a{
   }
 
   .button {
-    width: 15rem;
+    width: 15em;
     order: 1;
-    margin-top: 3.5rem;
+    margin-top: 3.5em;
     font-size: 1em;
-    padding: 1rem 0.7rem;
+    padding: 1em 0.7em;
   }
 
   .home {
-    margin-top: 4.5rem;
+    margin-top: 4.5em;
     font-size: 1.2em;
-  }
-
-  .text {
-    font-size: 1em;
   }
 }
 
@@ -269,9 +250,9 @@ a{
     background-size: cover;
   }
 
-  .main-page-head>h1 {
-    font-size: 4rem;
-    line-height: 4.2rem;
+  .main-page-head > h1 {
+    font-size: 3em;
+    line-height: 2em;
     text-align: left;
     grid-area: 1/2/1/2;
   }
@@ -285,30 +266,17 @@ a{
   }
 
   .info-header {
-    font-size: 1.5rem;
-    padding: 2rem 0;
-  }
-
-  .pay-head {
-    padding-top: 0;
+    font-size: 1.5em;
+    padding: 2em 0;
   }
 
   .donation-form {
-    margin: 4rem 4rem 4rem 4rem;
+    margin: 4em 4em 4em 4em;
     grid-area: 1/1/1/1;
   }
 
-
   .button {
-    padding: 0.8rem 0.7rem;
-  }
-
-  .text {
-    font-size: 1.1em;
-  }
-
-  .confirm-payment {
-    margin-top: 100%;
+    padding: 0.8em 0.7em;
   }
 
   .foot {

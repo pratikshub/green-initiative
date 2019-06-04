@@ -75,12 +75,12 @@
   }
   .what-we-do-heading {
     justify-items: left;
-    padding-top: 5vh;
+    padding-top: 5%;
     margin-bottom: 0%;
   }
   .what-we-do-heading > div {
-    width: 30%;
     font-size: 0.8em;
+    padding: 2%;
   }
   .what-we-do-heading-content {
     text-align: left;
@@ -96,6 +96,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     height: 16em;
     padding-top: 0%;
+    margin-bottom: 15%;
   }
   .what-we-do-img {
     grid-area: 1/1/3/2;
@@ -340,7 +341,7 @@
 
   .stories {
     grid-template-rows: 0.5fr;
-    grid-template-columns: 1fr 6fr 10fr;
+    /* grid-template-columns: 1fr 6fr 10fr; */
     grid-gap: 0%;
   }
   .stories-head {
