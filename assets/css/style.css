@@ -24,6 +24,7 @@
   font-weight: bold;
   /* padding-left: 10%; */
   font-size: 1em;
+  align-self: center;
 }
 
 .navigation {
@@ -44,7 +45,6 @@
 .donation {
   margin-top: 8%;
   grid-area: 2/1 / span 1 / span 2;
-  
 }
 
 .donation-btn {
@@ -58,14 +58,13 @@
   border-radius: 3em;
   font-weight: bold;
   width: 100%;
-
 }
 
 .main-page {
   height: 35em;
   background-image: url("../home/annie-spratt-135307-unsplash.jpeg");
-  background-size: 350% auto;
-  background-position-x: 45%;
+  background-size: 257% auto;
+  background-position-x: 37%;
   background-position-y: 85%;
   background-repeat: no-repeat;
   display: grid;
@@ -77,13 +76,13 @@
   font-weight: bold;
   color: #ffffff;
   font-size: 2.75em;
-  margin: 10% 0% 0% 10%;
+  margin: 8.5%;
 }
 
 .main-page-content2 {
   background-color: white;
-  margin: 5% 10% 15% 10%;
-  padding: 10% 2% 0% 2%;
+  margin: 8.5%;
+  /* padding: 10% 2% 0% 2%; */
   text-align: center;
   position: relative;
   display: flex;
@@ -92,16 +91,18 @@
 }
 
 .main-page-content2-head {
-  font-size: 1.4em;
+  font-size: 1.45em;
   text-align: center;
   font-weight: bold;
   font-family: "Helvetica";
+  margin: 10% 5% 5% 5%;
 }
 
 .main-page-content2-low {
   font-size: 1em;
   font-weight: 200;
   text-align: center;
+  margin: 10%;
 }
 
 .main-page-content2-low > a {
@@ -132,7 +133,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 10% 5% 10% 5%;
+  padding: 10% 8.5% 10% 8.5%;
   color: #354463;
 }
 
@@ -144,8 +145,8 @@
 
 .main-page-lower-content {
   font-weight: 300;
-  padding: 1% 1% 1% 1%;
-  font-size: 1em;
+  padding: 2% 1% 5% 1%;
+  font-size: 0.75em;
 }
 
 .main-page-lower-top {
@@ -161,13 +162,16 @@
 }
 
 .what-we-do {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-gap: 3em;
   font-family: "Open Sans", sans-serif;
   background-color: #354463;
 }
 
 .what-we-do > * {
-  width: 80%;
-  margin: 0% 10% 0% 10%;
+  /* width: 80%; */
+  margin: 0% 8.5% 0% 8.5%;
 }
 
 .what-we-do-heading {
@@ -182,7 +186,10 @@
   font-size: 0.8em;
   background-color: white;
   color: #354463;
-  padding: 2%;
+  padding: 4%;
+  justify-self: center;
+  width: 40%;
+  text-align: center;
 }
 .what-we-do-heading-content {
   font-weight: 700;
@@ -201,7 +208,7 @@
 
 .what-we-do-div-content {
   display: grid;
-  width: 80%;
+  /* width: 80%; */
   grid-template-rows: 4fr 1fr 2.8fr 2.2fr;
   align-items: center;
   padding: 5%;
@@ -236,6 +243,8 @@
   cursor: pointer;
   padding: 5%;
   border-radius: 3em;
+  width: 50%;
+  justify-self: center;
 }
 
 .climate-change {

@@ -1,16 +1,17 @@
 @media (min-width: 500px) {
   .logo {
-    font-size: 1.35em;
+    font-size: 1.2em;
 }
   .logo-nav {
-    margin: 2% 5% 2% 5%;
+    margin: 2% 8.5% 2% 8.5%;
     grid-template-columns: 2.4fr 1fr;
   }
   .navigation {
     flex-direction: row;
     justify-content: space-between;
     justify-self: self-start;
-    width: 70%;
+    width: 80%;
+    margin-top: 3%;
    
   }
   .navigation > a {
@@ -21,34 +22,41 @@
     grid-area: 1/2/1/2;
   }
   .donation-btn {
-    padding: 9%;
+    padding: 6% 5% 6% 5%;
     justify-self: center;
   }
   .main-page {
-    background-size: 190% auto;
+    background-size: 200% auto;
     background-position-x: 25%;
     background-position-y: 85%;
+    grid-template-rows: 1fr 1fr;
+    height: 42em;
+  }
+  .main-page-content > div {
+    margin: 8.5%;
+   
   }
   .main-page-content2 {
-    padding: 5% 2% 0% 5%;
+    padding: 0%;
+    margin: 8.5%;
   }
   .main-page-content2-head {
-    font-size: 2.2em;
+    font-size: 2.1em;
     text-align: left;
     font-weight: bold;
     font-family: "Helvetica";
-    margin-bottom: 2%;
+    margin: 8.5% 8.5% 0% 8.5%;
   }
   .main-page-content2-low {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 200;
     text-align: left;
-    margin-bottom: 5%;
+    margin: 5% 8.5% 5% 8.5%;
   }
   .main-page-content2-top {
     position: absolute;
-    top: -10%;
-    left: 10%;
+    top: -6.5%;
+    left: 8.5%;
     padding: 2%;
   }
   .main-page-lower {
@@ -58,7 +66,7 @@
     padding: 0% 0% 2% 0%;
   }
   .main-page-lower-content {
-    padding: 0% 25% 0% 0%;
+    padding: 0% 25% 5% 0%;
   }
   .main-page-lower-top {
     background-color: #354463;
@@ -79,15 +87,22 @@
   .what-we-do-heading {
     justify-items: left;
     padding-top: 5%;
-    margin-bottom: 0%;
+    margin-bottom: 0%;grid-template-rows:1fr 3fr;
+
   }
   .what-we-do-heading > div {
-    font-size: 0.8em;
-    padding: 2%;
+    font-size: 1em;
+    background-color: white;
+    color: #354463;
+    padding: 4%;
+    justify-self: self-start;
+    width: 25%;
+    text-align: center;
+    align-self: center;
   }
   .what-we-do-heading-content {
     text-align: left;
-    font-size: 1.7em;
+    font-size: 1.8em;
   }
   .what-we-do-div {
     grid-row-gap: 0;
@@ -103,7 +118,7 @@
   }
   .what-we-do-img {
     grid-area: 1/1/3/2;
-    width: 110%;
+    width: 100%;
     top: -25%;
     left: -5%;
   }
@@ -121,9 +136,11 @@
     font-size: 0.9em;
   }
   .what-we-do-div-content-btn {
-    grid-area: 2/1/4/2;
+    grid-area: 3/1/3/2;
     font-size: 0.7em;
     width: 50%;
+    justify-self: end;
+
   }
   .climate-change {
     background-size: 550% auto;
@@ -258,16 +275,21 @@
     background-position-x: 0%;
     background-position-y: 45%;
     grid-template-rows: 1fr;
+    height: auto;
   }
   .main-page-content {
     grid-area: 1/2/1/2;
+    margin: 15% 0% 0% 17%;
   }
   .main-page-content2 {
     grid-area: 1/1/1/1;
-    margin: 20% 15% 20% 15%;
+    margin: 17% 0% 17% 17%;
+    height: 17em;
+
   }
   .main-page-content > div {
-    font-size: 4em;
+    font-size: 3em;
+    margin: 0%;
   }
   .main-page-content2-top {
     top: -5%;
@@ -279,51 +301,59 @@
     font-size: 1em;
   }
   .main-page-lower {
-    padding: 10% 5% 10% 5%;
+    padding: 10% 8.5% 10% 8.5%;
     display: flex;
+  }
+  .main-page-lower>div{
+    margin-right: 2%;
   }
   .main-page-lower-top {
     font-size: 1em;
   }
   .main-page-lower-head {
     padding: 2% 2% 5% 2%;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .main-page-lower-content {
     padding: 1% 0% 1% 1%;
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   .what-we-do {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
   .what-we-do > div {
-    width: 90%;
+    /* width: 90%; */
   }
   .what-we-do-heading {
     display: block;
     padding-bottom: 4em;
   }
   .what-we-do-heading > div {
-    width: 7em;
+    width: 15%;
+    padding: 1%;
+
   }
   .what-we-do-heading-content {
     font-size: 2.5em;
     text-align: left;
-    padding-top: 1em;
+    /* padding-top: 1em; */
   }
 
   .what-we-do-div {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 10%;
+    justify-content: space-between;
   }
   .what-we-do-div-content {
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 1.5fr;
+    grid-template-columns: 1fr;
     width: 20%;
     padding: 0 3%;
-    height: 35em;
+    height: 30em;
+    margin-bottom: 5%;
   }
   .what-we-do-div-content > * {
     text-align: center;
@@ -333,15 +363,33 @@
     position: relative;
     width: 130%;
     margin-top: -2rem;
+    grid-area: 1/1/1/1;
+    top: -5%;
+    left: -5%;
   }
   .what-we-do-div-content p {
     text-align: left;
-    padding: 5%;
-    font-size: 0.8em;
+    /* padding: 5%; */
+    font-size: 0.9em;
+    padding: 0%;
+    grid-area: 3/1/3/1;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
   }
   .what-we-do-div-content h3 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: left;
+    padding: 0%;
+    grid-area: 2/1/2/1;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  .what-we-do-div-content-btn {
+    grid-area: 4/1/4/1;
+    font-size: 0.7em;
+    width: 50%;
+    justify-self: self-start;
+
   }
 
   .stories {
