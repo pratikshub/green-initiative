@@ -1,7 +1,7 @@
 @media (min-width: 500px) {
   .logo {
     font-size: 1.2em;
-}
+  }
   .logo-nav {
     margin: 2% 8.5% 2% 8.5%;
     grid-template-columns: 2.4fr 1fr;
@@ -12,11 +12,9 @@
     justify-self: self-start;
     width: 80%;
     margin-top: 3%;
-   
   }
   .navigation > a {
     font-size: 0.75em;
-
   }
   .donation {
     grid-area: 1/2/1/2;
@@ -34,7 +32,6 @@
   }
   .main-page-content > div {
     margin: 8.5%;
-   
   }
   .main-page-content2 {
     padding: 0%;
@@ -87,8 +84,8 @@
   .what-we-do-heading {
     justify-items: left;
     padding-top: 5%;
-    margin-bottom: 0%;grid-template-rows:1fr 3fr;
-
+    margin-bottom: 0%;
+    grid-template-rows: 1fr 3fr;
   }
   .what-we-do-heading > div {
     font-size: 1em;
@@ -140,28 +137,31 @@
     font-size: 0.7em;
     width: 50%;
     justify-self: end;
-
   }
   .climate-change {
-    background-size: 550% auto;
-    background-position-x: 45%;
-    background-position-y: 75%;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr;
+    background-size: 250% auto;
+    background-position-x: 65%;
+    background-position-y: 9%;
+    display: flex;
+    padding: 8.5%;
+    height: 40em;
+    justify-content: space-between;
   }
   .climate-change-head {
-    position: relative;
-    top: 10%;
-    left: 5%;
+    margin: 0%;
+    width: 40%;
+  }
+  .climate-change-head-cots{
+    margin-bottom: 5%;
   }
   .climate-change-lower {
-    top: 10%;
+    width: 50%;
   }
-  .climate-change-head-btn {
-    position: absolute;
-    top: 25%;
+  
+  .climate-change-lower {
+    margin: 0%;
   }
+  
   .things-to-do {
     display: block;
     position: relative;
@@ -266,7 +266,7 @@
     margin-top: 0%;
     align-self: center;
   }
-  .donation-btn{
+  .donation-btn {
     padding: 5% 10% 5% 10%;
   }
   .main-page {
@@ -285,7 +285,6 @@
     grid-area: 1/1/1/1;
     margin: 17% 0% 17% 17%;
     height: 17em;
-
   }
   .main-page-content > div {
     font-size: 3em;
@@ -304,7 +303,7 @@
     padding: 10% 8.5% 10% 8.5%;
     display: flex;
   }
-  .main-page-lower>div{
+  .main-page-lower > div {
     margin-right: 2%;
   }
   .main-page-lower-top {
@@ -324,9 +323,7 @@
     align-items: center;
     height: auto;
   }
-  .what-we-do > div {
-    /* width: 90%; */
-  }
+  
   .what-we-do-heading {
     display: block;
     padding-bottom: 4em;
@@ -334,7 +331,6 @@
   .what-we-do-heading > div {
     width: 15%;
     padding: 1%;
-
   }
   .what-we-do-heading-content {
     font-size: 2.5em;
@@ -389,9 +385,16 @@
     font-size: 0.7em;
     width: 50%;
     justify-self: self-start;
-
   }
-
+  .climate-change {
+    background-size: 250% auto;
+    background-position-x: 67%;
+    background-position-y: 26%;
+    height: 50em;
+  }
+  .climate-change-head-cots{
+    font-size: 2.7em;
+  }
   .stories {
     grid-template-rows: 0.5fr;
     /* grid-template-columns: 1fr 6fr 10fr; */
