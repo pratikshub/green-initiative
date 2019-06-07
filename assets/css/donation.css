@@ -45,7 +45,7 @@ header {
   font-size: 1.1em;
   margin-bottom: 10%;
 }
-.form{
+.form {
   position: relative;
 }
 input {
@@ -59,28 +59,26 @@ input {
 }
 label {
   position: absolute;
-  top: 0.3em;
+  top: 0.5em;
   font-size: 0.8em;
   left: 0.2em;
   color: #888888;
-  transition-property: left, top, color;
+  transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   pointer-events: none;
 }
-input:focus{
+input:focus {
   outline: none;
 }
 input:focus ~ label,
-input:valid ~ label
-{
+input:valid ~ label {
   left: 0em;
   top: -1em;
-  font-size: 0.7rem;
+  font-size: 0.85em;
   color: white;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
-
 
 .name {
   display: flex;
@@ -115,7 +113,7 @@ input:valid ~ label
   padding-bottom: 1.5em;
   font-size: 0.8em;
 }
-.nmbr{
+.nmbr {
   width: 100%;
 }
 .exp {
@@ -216,7 +214,6 @@ input:valid ~ label
   .info-header {
     padding-bottom: 2em;
     margin-bottom: 0%;
-    
   }
   label {
     font-size: 0.8em;

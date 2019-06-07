@@ -17,18 +17,22 @@
   font-family: "Open Sans";
   background-color: white;
   grid-template-columns: 1fr 1fr;
+  margin: 8.5%;
 }
 
 .logo {
   font-weight: bold;
-  padding-left: 10%;
+  /* padding-left: 10%; */
+  font-size: 1em;
 }
 
 .navigation {
-  font-family: "Rambla", sans-serif;
+  /* font-family: "Rambla", sans-serif; */
   display: flex;
   flex-direction: column;
-  font-weight: 200;
+  opacity: 100%;
+  /* font-weight: 200; */
+  justify-self: end;
 }
 
 .navigation > a {
@@ -38,8 +42,9 @@
 }
 
 .donation {
-  margin: 3% 0% 3% 5%;
+  margin-top: 8%;
   grid-area: 2/1 / span 1 / span 2;
+  
 }
 
 .donation-btn {
@@ -49,8 +54,11 @@
   text-align: center;
   font-size: 1em;
   cursor: pointer;
-  padding: 5% 30% 5% 30%;
+  padding: 3% 25% 3% 25%;
   border-radius: 3em;
+  font-weight: bold;
+  width: 100%;
+
 }
 
 .main-page {
@@ -108,9 +116,10 @@
   padding: 5%;
   position: absolute;
   top: -10%;
-  left: 30%;
+  /* left: 30%; */
   color: white;
   font-size: 0.8em;
+  align-self: center;
 }
 
 .main-page-lower-main {
