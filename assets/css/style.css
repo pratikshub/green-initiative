@@ -22,24 +22,20 @@
 
 .logo {
   font-weight: bold;
-  /* padding-left: 10%; */
   font-size: 1em;
   align-self: center;
 }
 
 .navigation {
-  /* font-family: "Rambla", sans-serif; */
   display: flex;
   flex-direction: column;
-  opacity: 100%;
-  /* font-weight: 200; */
   justify-self: end;
 }
 
 .navigation > a {
   text-decoration: none;
   color: #354463;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .donation {
@@ -52,23 +48,25 @@
   border: none;
   color: #354463;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   cursor: pointer;
   padding: 3% 25% 3% 25%;
   border-radius: 3em;
   font-weight: bold;
   width: 100%;
+  font-weight: 600;
 }
 
 .main-page {
-  height: 35em;
+  height: 33em;
   background-image: url("../home/annie-spratt-135307-unsplash.jpeg");
-  background-size: 257% auto;
+  background-size: 310% auto;
   background-position-x: 37%;
-  background-position-y: 85%;
+  background-position-y: 100%;
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding: 8.5%;
 }
 
 .main-page-content > div {
@@ -76,18 +74,19 @@
   font-weight: bold;
   color: #ffffff;
   font-size: 2.75em;
-  margin: 8.5%;
+  /* margin: 8.5%; */
 }
 
 .main-page-content2 {
   background-color: white;
-  margin: 8.5%;
+  /* margin: 8.5%; */
   /* padding: 10% 2% 0% 2%; */
   text-align: center;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 15em;
 }
 
 .main-page-content2-head {
@@ -95,14 +94,14 @@
   text-align: center;
   font-weight: bold;
   font-family: "Helvetica";
-  margin: 10% 5% 5% 5%;
+  padding: 10% 5% 5% 5%;
 }
 
 .main-page-content2-low {
   font-size: 1em;
   font-weight: 200;
   text-align: center;
-  margin: 10%;
+  padding: 10%;
 }
 
 .main-page-content2-low > a {
@@ -112,12 +111,11 @@
 
 .main-page-content2-top {
   background-color: #354463;
-  width: 7em;
+  width: 8em;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
   position: absolute;
-  top: -10%;
-  /* left: 30%; */
+  top: -7%;
   color: white;
   font-size: 0.8em;
   align-self: center;
@@ -151,9 +149,9 @@
 
 .main-page-lower-top {
   background-color: #354463;
-  width: 7em;
+  width: 8em;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
   position: absolute;
   top: -10%;
   left: 35%;
@@ -186,9 +184,9 @@
   font-size: 0.8em;
   background-color: white;
   color: #354463;
-  padding: 4%;
+  padding: 3%;
   justify-self: center;
-  width: 40%;
+  width: 8em;
   text-align: center;
 }
 .what-we-do-heading-content {
@@ -244,7 +242,7 @@
   padding: 5%;
   border-radius: 3em;
   width: 50%;
-    justify-self: center;
+  justify-self: center;
 }
 
 .climate-change {
@@ -254,7 +252,7 @@
   background-position-x: 45%;
   background-position-y: 75%;
 }
-.climate-change-head{
+.climate-change-head {
   margin: 8.5%;
 }
 .climate-change-head-cots {
@@ -306,6 +304,7 @@
   font-weight: bold;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
+  align-self: end;
 }
 
 .climate-change-lower-content-info {
@@ -318,6 +317,7 @@
   border-radius: 50%;
   height: 1.5em;
   width: 1.5em;
+  align-self: center;
 }
 
 .climate-change-lower-content-logo > img {
@@ -325,12 +325,12 @@
 }
 
 .stories {
-  width: 80%;
-  margin: 10%;
+  margin: 8.5%;
   display: grid;
   grid-template-rows: 4fr 4fr 1fr;
   grid-gap: 4%;
   position: relative;
+  height: 45em;
 }
 
 .stories-head {
@@ -378,30 +378,32 @@
   padding: 5% 20% 5% 20%;
 }
 
-.things-to-do {
-  display: grid;
-  grid-template-rows: minmax(0, 2fr) minmax(0, 5fr) minmax(0, 5fr);
+/* .things-to-do { */
+/* display: grid;
+  grid-template-rows:;
   justify-items: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
+  align-items: center; */
+/* font-family: "Open Sans", sans-serif;
   background-color: #354463;
-}
-.things-to-do > * {
-  width: 80%;
-  padding-bottom: 20%;
-}
-.slogan {
+  padding: 8.5%;
+} */
+/* .things-to-do > * { */
+/* width: 80%; */
+/* padding-bottom: 20%; */
+/* } */
+/* .slogan {
   font-family: "FloodFont", sans-serif;
   line-height: 2.5rem;
-  font-size: 2.5rem;
+  font-size: 2.8em;
   color: white;
   text-align: center;
-  margin-top: 5%;
+  margin: 5%;
 }
 .event,
 .news {
   display: grid;
-  height: 100%;
+  grid-template-rows: 0.5fr 4fr 1fr 2fr 1fr;
+  height: auto;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
@@ -409,11 +411,13 @@
 }
 .event-head {
   position: relative;
-  top: 70%;
+  top: 50%;
   background-color: white;
   color: #354463;
   font-size: 1.2em;
   padding: 2% 5% 2% 5%;
+  width: 7em;
+
 }
 .event > img,
 .news > img {
@@ -440,8 +444,31 @@
   color: white;
   font-size: 1em;
   width: 90%;
+} */
+.things-to-do {
+  background-color: #354463;
+  padding: 8.5%;
 }
-
+.slogan {
+  font-family: "FloodFont";
+  font-size: 2.8em;
+  color: white;
+  text-align: center;
+  margin: 5%;
+}
+.events {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 5em;
+  grid-column-gap: 4em;
+}
+.events-img > img {
+  max-width: 100%;
+  width: 100%;
+}
+.events-content{
+  
+}
 .subscribe {
   background-color: #c1f7d5;
   display: grid;
