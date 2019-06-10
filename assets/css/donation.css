@@ -17,6 +17,7 @@ header {
 .main-page {
   background-image: url(../donation/annie-spratt-427340-unsplash@2x.png);
   background-position-x: 60%;
+  padding: 8.5%;
 }
 
 .main-page-head > h1 {
