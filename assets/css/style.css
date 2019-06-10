@@ -74,13 +74,10 @@
   font-weight: bold;
   color: #ffffff;
   font-size: 2.75em;
-  /* margin: 8.5%; */
 }
 
 .main-page-content2 {
   background-color: white;
-  /* margin: 8.5%; */
-  /* padding: 10% 2% 0% 2%; */
   text-align: center;
   position: relative;
   display: flex;
@@ -168,7 +165,6 @@
 }
 
 .what-we-do > * {
-  /* width: 80%; */
   margin: 0% 8.5% 0% 8.5%;
 }
 
@@ -206,7 +202,6 @@
 
 .what-we-do-div-content {
   display: grid;
-  /* width: 80%; */
   grid-template-rows: 4fr 1fr 2.8fr 2.2fr;
   align-items: center;
   padding: 5%;
@@ -253,7 +248,7 @@
   background-position-y: 75%;
 }
 .climate-change-head {
-  margin: 8.5%;
+  padding: 8.5%;
 }
 .climate-change-head-cots {
   font-family: "FloodFont";
@@ -375,100 +370,84 @@
   left: 25%;
 }
 
-/* .things-to-do { */
-/* display: grid;
-  grid-template-rows:;
-  justify-items: center;
-  align-items: center; */
-/* font-family: "Open Sans", sans-serif;
-  background-color: #354463;
-  padding: 8.5%;
-} */
-/* .things-to-do > * { */
-/* width: 80%; */
-/* padding-bottom: 20%; */
-/* } */
-/* .slogan {
-  font-family: "FloodFont", sans-serif;
-  line-height: 2.5rem;
-  font-size: 2.8em;
-  color: white;
-  text-align: center;
-  margin: 5%;
-}
-.event,
-.news {
-  display: grid;
-  grid-template-rows: 0.5fr 4fr 1fr 2fr 1fr;
-  height: auto;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-}
-.event-head {
-  position: relative;
-  top: 50%;
-  background-color: white;
-  color: #354463;
-  font-size: 1.2em;
-  padding: 2% 5% 2% 5%;
-  width: 7em;
-
-}
-.event > img,
-.news > img {
-  width: 100%;
-}
-.event-btn {
-  background-color: #c1f7d5;
-  border: none;
-  color: #354463;
-  text-align: center;
-  font-size: 1.1em;
-  cursor: pointer;
-  border-radius: 3em;
-  padding: 5% 10% 5% 10%;
-  margin: 5%;
-}
-.event-title {
-  width: 95%;
-  color: white;
-  font-size: 1.3em;
-  font-weight: 700;
-}
-.event-content {
-  color: white;
-  font-size: 1em;
-  width: 90%;
-} */
 .things-to-do {
   background-color: #354463;
+  display: flex;
+  flex-direction: column;
   padding: 8.5%;
 }
-.slogan {
+
+.things-to-do > p {
   font-family: "FloodFont";
-  font-size: 2.8em;
+  font-size: 2.75em;
+  line-height: 1em;
+  color: white;
+  padding: 5%;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.events {
+  position: relative;
+}
+
+.news {
+  position: relative;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-self: center;
+}
+
+.events-img,
+.news-img {
+  width: 100%;
+}
+.events-brief,
+.news-brief {
+  padding: 8.5%;
   color: white;
   text-align: center;
-  margin: 5%;
 }
-.events {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-bottom: 5em;
-  grid-column-gap: 4em;
+.event,
+.latest {
+  background-color: white;
+  color: #354463;
+  font-size: 1em;
+  position: absolute;
+  top: -1em;
+  left: 30%;
+  width: 35%;
+  padding: 3%;
 }
-.events-img > img {
-  max-width: 100%;
-  width: 100%;
+.events-brief > h3,
+.news-brief > h3 {
+  font-size: 1.3em;
+}
+
+.events-brief > p,
+.news-brief > p {
+  font-size: 1.1em;
+}
+
+.events-button {
+  background-color: #c1f7d5;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5%;
+  border-radius: 3em;
+  width: 50%;
+  color: #354463;
 }
 
 .subscribe {
   background-color: #c1f7d5;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 8.5%;
-  /* grid-row-gap: 20%; */
   grid-column-gap: 5%;
 }
 
@@ -491,7 +470,7 @@
   background-color: #354463;
   font-size: 1.2em;
   font-weight: bold;
-  padding: 3% 3%;
+  padding: 10%;
   border-radius: 3em;
 }
 
@@ -516,22 +495,29 @@
 
 .social-link {
   display: block;
-  list-style-type: disc;
+  list-style-type: initial;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 5px;
 }
+li {
+  list-style-type: none;
+}
+ul{
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+}
 
 .help {
   display: block;
-  list-style-type: disc;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 10%;
+  padding-inline-start: 0%;
 }
 
 .title {

@@ -31,7 +31,7 @@
     grid-template-rows: 1fr 1fr;
     height: 35em;
   }
-  
+
   .main-page-content2 {
     padding: 0%;
     height: 18em;
@@ -166,82 +166,85 @@
     position: relative;
     left: 15%;
     top: -8em;
-   
   }
-  .stories-btn{
-    left:15%;
-    top:-8em;
+  .stories-btn {
+    left: 15%;
+    top: -8em;
     width: 30%;
     padding: 3%;
   }
-  
-  .things-to-do {
-    display: block;
-    position: relative;
-  }
-  .slogan {
-    /* margin: 8%; */
-    text-align: left;
-    /* padding: 5%; */
-    font-size: 1.9em;
-    padding-right: 15%;
-  }
-  .event,
-  .news {
-    height: auto;
-    display: block;
-    width: 37.5%;
+  .things-to-do > p {
+    margin-bottom: 10%;
     text-align: left;
     padding: 0%;
-    margin-left: 55%;
-    margin-top: 10%;
   }
 
-  .event > * {
-    margin: 8% 0;
-    font-size: 1em;
+  .events {
+    display: flex;
   }
 
   .news {
-    height: auto;
-    display: block;
-    width: 37.5%;
-    text-align: left;
-    padding: 0%;
-    margin-left: 10%;
-    margin-top: 10%;
+    align-self: center;
+    padding-bottom: 5%;
+    flex-direction: row;
   }
-  .news > * {
-    margin: 8% 0;
-    font-size: 1em;
-  }
-  .event > img {
-    position: absolute;
-    width: 37.5%;
-    left: 10%;
-    top: 12.9%;
-  }
-  .news > img {
-    position: absolute;
-    width: 37.5%;
-    left: 55%;
-    top: 52.6%;
-  }
-  .event-head {
-    top: 0;
+  .events-brief,
+  .news-brief {
     width: 50%;
+    padding: 2%;
+    text-align: left;
+  }
+  .events-img {
+    width: 40%;
+    height: 60%;
+    margin-right: 10%;
+  }
+  .news-img {
+    width: 40%;
+    height: 60%;
+  }
+  .event {
+    top: 0;
+    left: 52%;
+    width: 25%;
+    padding: 1%;
     text-align: center;
   }
 
+  .latest {
+    top: 0;
+    left: 2%;
+    width: 25%;
+    padding: 1% 2%;
+    text-align: center;
+  }
+  .events-brief > h3,
+  .news-brief > h3 {
+    margin-top: 15%;
+  }
+  .events-button {
+    padding: 3%;
+  }
+  .subscribe {
+    grid-template-columns: 2fr 1fr;
+  }
   .subscribe > p {
-    grid-area: 1/1/2/3;
+    grid-area: 1/1/1/1;
     font-size: 1.5em;
     font-weight: bold;
   }
-  .foot{
+  .foot {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
   }
-  .title>h1{
+  .help {
+    grid-area: 2/2/2/2;
+  }
+  .cots {
+    grid-area: 2/3/2/3;
+    text-align: left;
+  }
+  .title > h1 {
     margin-block-start: 0em;
     margin-block-end: 0em;
   }
@@ -281,7 +284,6 @@
   }
   .main-page-content2 {
     grid-area: 1/1/1/1;
-    /* margin: 17% 0% 17% 17%; */
     height: 18em;
     margin-right: 17%;
   }
@@ -365,7 +367,6 @@
   }
   .what-we-do-div-content p {
     text-align: left;
-    /* padding: 5%; */
     font-size: 0.9em;
     padding: 0%;
     grid-area: 3/1/3/1;
@@ -398,11 +399,11 @@
   .climate-change-lower-content {
     height: 10em;
   }
-  
+
   .stories {
     flex-direction: row;
   }
-  .stories-head{
+  .stories-head {
     order: 2;
     height: 40em;
     width: 80%;
@@ -413,12 +414,12 @@
     top: -5%;
     padding: 3% 5%;
   }
-.stories-content-block{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 50%;
-}
+  .stories-content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+  }
   .stories-content {
     width: 112%;
     position: relative;
@@ -426,7 +427,6 @@
     left: 30%;
     height: 15em;
   }
-
   .stories-btn {
     padding: 2.5%;
     position: relative;
@@ -434,13 +434,38 @@
     top: 10em;
     width: 30%;
   }
+  .things-to-do > p {
+    padding-right: 20%;
+    font-size: 3.5em;
+  }
+  .events-img,
+  .news-img {
+    height: auto;
+  }
+  .event {
+    width: 10%;
+  }
+  .latest {
+    width: 15%;
+  }
+  .events-brief > h3,
+  .news-brief > h3 {
+    margin-top: 10%;
+    font-size: 2.3em;
+  }
+  .events-brief > p,
+  .news-brief > p {
+    font-size: 1.3em;
+  }
+  .events-button {
+    padding: 3%;
+  }
   .subscribe {
     grid-template-columns: 50fr 30fr 20fr;
     grid-row-gap: 0%;
     grid-column-gap: 0%;
-    padding: 5% 5% 5% 5%;
+    padding: 8.5%;
   }
-
   .subscribe > p {
     grid-area: 1/1/1/1;
     font-size: 1em;
@@ -490,6 +515,6 @@
   .cots {
     font-family: "FloodFont";
     font-size: 2.5em;
-    padding-left: 5%;
+    padding: 0%;
   }
 }
