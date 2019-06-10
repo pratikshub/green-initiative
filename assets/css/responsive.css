@@ -477,7 +477,7 @@
     border: none;
     border-radius: 2em;
     text-align: center;
-    margin: 5%;
+    margin-right: 5%;
   }
 
   .subscribe > button {
@@ -485,7 +485,7 @@
     font-size: 1em;
     cursor: pointer;
     border-radius: 3em;
-    margin: 2%;
+    padding: 5%;
   }
   .foot {
     display: flex;

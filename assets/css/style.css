@@ -313,6 +313,9 @@
   height: 1.5em;
   width: 1.5em;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .climate-change-lower-content-logo > img {
@@ -460,18 +463,22 @@
 .subscribe > input {
   grid-area: 2/1/3/2;
   border: none;
-  border-radius: 2em;
+  border-radius: 3em;
   text-align: center;
+  height: 80%;
+  align-self: end;
 }
 
 .subscribe > button {
   grid-area: 2/2/3/3;
   color: #c1f7d5;
   background-color: #354463;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
-  padding: 10%;
+  padding: 5% 5% 10% 5%;
   border-radius: 3em;
+  height: 80%;
+  align-self: end;
 }
 
 .foot {
